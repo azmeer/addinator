@@ -1,20 +1,20 @@
-const add = require ('./adder.js');
+const add = require ("./adder.js");
 
 class ViewManager {
 
   connectEventHandlers() {
-    document.getElementById('form-numbers')
+    document.getElementById("form-numbers")
       .addEventListener(
-	'submit',
+	"submit",
         this.onSubmit);    
   }
 
   onSubmit(event) {
     event.preventDefault();
     let num1 = document.getElementById(
-      'input-num1').value;
+      "input-num1").value;
     let num2 = document.getElementById(
-      'input-num2').value;
+      "input-num2").value;
     
     num1 = parseInt(num1,10);
     num2 = parseInt(num2,10);
